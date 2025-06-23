@@ -211,6 +211,7 @@ layers:
   - ''
   - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
+  - RGB ON
   - ''
   - ''
   - ''
@@ -219,8 +220,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
   - ''
   - ''
   - ''
