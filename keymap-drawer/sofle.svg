@@ -1214,11 +1214,8 @@ rect.held, rect.combo.held {
 <g transform="translate(868, 175)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(28, 231)" class="key toggle keypos-36">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key toggle"/>
-<use href="#mdi:led-on" xlink:href="#mdi:led-on" x="-9" y="-9" height="18" width="18.0" class="key toggle tap glyph mdi:led-on"/>
-<use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-8" y="9" height="15" width="15.0" class="key toggle hold glyph mdi:toggle-switch"/>
-<use href="#mdi:led-outline" xlink:href="#mdi:led-outline" x="-8" y="-24" height="15" width="15.0" class="key toggle shifted glyph mdi:led-outline"/>
+<g transform="translate(28, 231)" class="key keypos-36">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(84, 231)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1277,8 +1274,11 @@ rect.held, rect.combo.held {
 <g transform="translate(378, 291) rotate(30.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 </g>
-<g transform="translate(518, 291) rotate(-30.0)" class="key keypos-55">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
+<g transform="translate(518, 291) rotate(-30.0)" class="key toggle keypos-55">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key toggle"/>
+<use href="#mdi:led-on" xlink:href="#mdi:led-on" x="-9" y="-9" height="18" width="18.0" class="key toggle tap glyph mdi:led-on"/>
+<use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-8" y="23" height="15" width="15.0" class="key toggle hold glyph mdi:toggle-switch"/>
+<use href="#mdi:led-outline" xlink:href="#mdi:led-outline" x="-8" y="-38" height="15" width="15.0" class="key toggle shifted glyph mdi:led-outline"/>
 </g>
 <g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
