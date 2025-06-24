@@ -32,10 +32,10 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - P
-  - '&hmt RCTRL H'
-  - '&hmt RIGHT_SHIFT A'
-  - '&hmt LEFT_ALT E'
-  - '&hmt RIGHT_GUI I'
+  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: RIGHT SHIFT}
+  - {t: E, h: LEFT ALT}
+  - {t: I, h: RIGHT GUI}
   - ''''
   - $$mdi:apple-keyboard-shift$$
   - X
