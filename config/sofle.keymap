@@ -12,7 +12,7 @@
 #include <dt-bindings/zmk/behaviors.h>
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/60.h"
+#include "zmk-helpers/key-labels/5x6.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
 
 #define ___ &trans
