@@ -349,8 +349,8 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(868, 63)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#qwerty">
-<text x="0" y="0" class="key tap layer-activator">qwerty</text>
+<a href="#another">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 86%">another</tspan></text>
 </a></g>
 <g transform="translate(28, 119)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -555,8 +555,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 398)" class="layer-qwerty">
-<text x="0" y="28" class="label" id="qwerty">qwerty:</text>
+<g transform="translate(40, 398)" class="layer-another">
+<text x="0" y="28" class="label" id="another">another:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

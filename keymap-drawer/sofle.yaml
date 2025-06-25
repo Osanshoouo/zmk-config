@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - qwerty
+  - another
   - Esc
   - B
   - L
@@ -61,7 +61,7 @@ layers:
   - $$mdi:backspace-outline$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  qwerty:
+  another:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
