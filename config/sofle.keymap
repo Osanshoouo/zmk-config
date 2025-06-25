@@ -19,8 +19,7 @@
 #define DEF 0
 #define NAV 1
 #define NUM 2
-#define QWT 3
-#define GER 4
+#define GER 3
 
 /* Timeless homerow mods */
 // https://github.com/urob/zmk-config/tree/main#timeless-homerow-mods
@@ -31,8 +30,7 @@
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
-#define QWERTY 3
-#define ADJUST 4
+#define ADJUST 3
 
 / {
     behaviors {
