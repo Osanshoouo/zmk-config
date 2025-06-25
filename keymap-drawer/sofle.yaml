@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - Adjust
+  - qwerty
   - Esc
   - B
   - L
@@ -183,6 +183,67 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  qwerty:
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - Insert
+  - Print Scrn
+  - CMENU
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Page Up
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - CLCK
+  - Page Down
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Adjust:
   - BT CLR
   - BT 1
@@ -195,7 +256,7 @@ layers:
   - '&bl BL_INC'
   - ''
   - ''
-  - {type: held}
+  - ''
   - EXT POWER TOGGLE CMD
   - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
@@ -238,8 +299,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - {type: held}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: held}
   - ''
   - ''
   - ''
