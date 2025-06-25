@@ -57,6 +57,13 @@
             hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
+
+        &nice_view_spi {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;  // use D0 (008) for CS (no 006)
+};
+
+
+
     };
 
     // Activate ADJUST layer by pressing raise and lower
