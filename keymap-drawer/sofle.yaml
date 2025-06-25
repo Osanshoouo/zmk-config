@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - another
+  - {t: another, h: toggle}
   - Esc
   - B
   - L
@@ -73,7 +73,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle, type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Q
   - W
