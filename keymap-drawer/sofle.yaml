@@ -195,7 +195,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: '-', type: held}
+  - {t: default, h: toggle, type: held}
   - Esc
   - Q
   - W
