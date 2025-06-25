@@ -19,7 +19,8 @@
 #define DEF 0
 #define NAV 1
 #define NUM 2
-#define GER 3
+#define QWT 3
+#define GER 4
 
 /* Timeless homerow mods */
 // https://github.com/urob/zmk-config/tree/main#timeless-homerow-mods
