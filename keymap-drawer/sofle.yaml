@@ -143,9 +143,9 @@ layers:
   - {t: ▽, type: trans}
   - Page Up
   - {t: ▽, type: trans}
-  - ↑
   - {t: ▽, type: trans}
-  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
@@ -154,11 +154,11 @@ layers:
   - {t: ▽, type: trans}
   - CLCK
   - Page Down
-  - ←
-  - ↓
-  - →
-  - ⌦
-  - $$mdi:backspace-outline$$
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT ARROW
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UNDO
   - CUT
