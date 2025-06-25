@@ -4,31 +4,29 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/behaviors.h>
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/5x6.h"
+#include "zmk-helpers/unicode-chars/german.dtsi"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/behaviors.h>
-
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/5x6.h"
-#include "zmk-helpers/unicode-chars/german.dtsi"
 
 #define ___ &trans
-
 #define DEF 0
 #define NAV 1
 #define NUM 2
 #define GER 3
 
 /* Timeless homerow mods */
-
 // https://github.com/urob/zmk-config/tree/main#timeless-homerow-mods
+
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
 #define THUMBS LH1 LH0 RH0 RH1
-
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
@@ -36,7 +34,7 @@
 
 / {
     behaviors {
-      hml: home_row_mod_left {
+        hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -44,9 +42,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -55,10 +55,12 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
-    }; 
+    };
+
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
@@ -67,6 +69,16 @@
         adjust_layer {
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
+        };
+    };
+
+    macros {
+        discord: discord {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI>, <&macro_press>, <&kp>;
+
+            label = "DISCORD";
         };
     };
 
@@ -82,11 +94,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1          &kp N2          &kp N3            &kp N4       &kp N5                          &kp N6      &kp N7       &kp N8             &kp N9          &kp N0           &mo 3
-&kp ESC    &kp B           &kp L           &kp D             &kp C        &kp V                           &kp J       &kp Y        &kp O              &kp U           &kp COMMA        &kp BSPC
+&kp GRAVE  &kp N1           &kp N2           &kp N3             &kp N4        &kp N5                          &kp N6      &kp N7        &kp N8              &kp N9           &kp N0            &mo 3
+&kp ESC    &kp B            &kp L            &kp D              &kp C         &kp V                           &kp J       &kp Y         &kp O               &kp U            &kp COMMA         &kp BSPC
 &kp TAB    &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LEFT_SHIFT T  &hml LCTRL S  &kp G                           &kp P       &hmr RCTRL H  &hmr RIGHT_SHIFT A  &hmr LEFT_ALT E  &hmr RIGHT_GUI I  &kp SQT
-&kp LSHFT  &kp X           &kp Q           &kp M             &kp W        &kp Z      &kp C_MUTE    &none  &kp K       &kp F        &kp SQT            &kp SEMICOLON   &kp DOT          &kp RSHFT
-                           &kp LGUI        &kp LALT          &kp LCTRL    &kp SPACE  &mo 1         &mo 2  &kp RETURN  &kp BSPC     &kp RALT           &kp RGUI
+&kp LSHFT  &kp X            &kp Q            &kp M              &kp W         &kp Z      &kp C_MUTE    &none  &kp K       &kp F         &kp SLASH           &kp SEMICOLON    &kp DOT           &kp RSHFT
+                            &kp LGUI         &kp LALT           &kp LCTRL     &kp SPACE  &mo 1         &mo 2  &kp RETURN  &kp BSPC      &kp RALT            &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -140,11 +152,11 @@
 
         Adjust_layer {
             bindings = <
-&bt BT_CLR                       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
-&ext_power EXT_POWER_TOGGLE_CMD  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
-&none                            &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_ON            &none            &none                                      &none  &none  &none  &none  &none  &none
-&none                            &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
-                                                  &none            &none            &none            &none            &none              &rgb_ug RGB_TOG  &none  &none  &none  &none
+&bt BT_CLR                       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                         &bl BL_TOG  &bl BL_DEC  &bl BL_INC  &none  &none  &none
+&ext_power EXT_POWER_TOGGLE_CMD  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                                      &none       &none       &none       &none  &none  &none
+&none                            &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_ON   &none            &none                                                &none       &none       &none       &none  &none  &none
+&none                            &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none            &none       &none       &none       &none  &none  &none
+                                                  &none            &none            &none            &none            &none              &rgb_ug RGB_TOG  &none       &none       &none       &none
             >;
         };
     };

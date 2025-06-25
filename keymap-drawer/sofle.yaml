@@ -47,7 +47,7 @@ layers:
   - ''
   - K
   - F
-  - ''''
+  - /
   - ;
   - .
   - $$mdi:apple-keyboard-shift$$
@@ -190,9 +190,9 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - ''
-  - ''
-  - ''
+  - '&bl BL_TOG'
+  - '&bl BL_DEC'
+  - '&bl BL_INC'
   - ''
   - ''
   - {type: held}
