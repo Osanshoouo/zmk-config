@@ -73,7 +73,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: default, h: toggle, type: held}
   - {t: ▽, type: trans}
   - Q
   - W
