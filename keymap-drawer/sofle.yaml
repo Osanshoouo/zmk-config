@@ -172,7 +172,7 @@ layers:
   - ;
   - ':'
   - \
-  - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
