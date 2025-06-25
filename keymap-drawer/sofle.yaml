@@ -44,7 +44,7 @@ layers:
   - W
   - Z
   - MUTE
-  - ''
+  - '&bl BL_TOG'
   - K
   - F
   - ''''
@@ -85,7 +85,7 @@ layers:
   - I
   - O
   - P
-  - $$mdi:backspace-outline$$
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - A
   - S
@@ -97,7 +97,7 @@ layers:
   - K
   - L
   - ;
-  - ENTER
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Z
   - X
@@ -111,7 +111,7 @@ layers:
   - ','
   - .
   - /
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -204,9 +204,9 @@ layers:
   - {t: ▽, type: trans}
   - Page Up
   - {t: ▽, type: trans}
-  - ↑
   - {t: ▽, type: trans}
-  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
@@ -216,10 +216,10 @@ layers:
   - CLCK
   - Page Down
   - ←
-  - ↓
-  - →
-  - ⌦
-  - $$mdi:backspace-outline$$
+  - DOWN ARROW
+  - UP ARROW
+  - UP ARROW
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UNDO
   - CUT
@@ -251,9 +251,9 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - ''
-  - ''
-  - ''
+  - '&bl BL_TOG'
+  - '&bl BL_DEC'
+  - '&bl BL_INC'
   - ''
   - ''
   - ''
