@@ -214,11 +214,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - CLCK
-  - Page Down
   - ←
-  - DOWN ARROW
-  - UP ARROW
-  - UP ARROW
+  - ↓
+  - ↑
+  - →
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UNDO
