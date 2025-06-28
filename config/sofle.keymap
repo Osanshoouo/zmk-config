@@ -83,11 +83,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1           &kp N2           &kp N3             &kp N4        &kp N5                               &kp N6      &kp N7        &kp N8              &kp N9           &kp N0            &tog 1
-&kp ESC    &kp B            &kp L            &kp D              &kp C         &kp V                                &kp J       &kp Y         &kp O               &kp U            &kp COMMA         &kp BSPC
-&kp TAB    &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LEFT_SHIFT T  &hml LCTRL S  &kp G                                &kp P       &hmr RCTRL H  &hmr RIGHT_SHIFT A  &hmr LEFT_ALT E  &hmr RIGHT_GUI I  &kp SQT
-&kp LSHFT  &kp X            &kp Q            &kp M              &kp W         &kp Z      &kp C_MUTE    &bl BL_TOG  &kp K       &kp F         &kp SQT             &kp SEMICOLON    &kp DOT           &kp RSHFT
-                            &kp LGUI         &kp LALT           &kp LCTRL     &kp SPACE  &mo 2         &mo 3       &kp RETURN  &kp BSPC      &kp RALT            &kp RGUI
+&kp GRAVE  &kp N1           &kp N2           &kp N3             &kp N4        &kp N5                               &kp N6         &kp N7        &kp N8              &kp N9           &kp N0            &tog 1
+&kp ESC    &kp B            &kp L            &kp D              &kp C         &kp V                                &kp J          &kp Y         &kp O               &kp U            &kp COMMA         &kp BSPC
+&kp TAB    &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LEFT_SHIFT T  &hml LCTRL S  &kp G                                &kp P          &hmr RCTRL H  &hmr RIGHT_SHIFT A  &hmr LEFT_ALT E  &hmr RIGHT_GUI I  &kp SQT
+&kp LSHFT  &kp X            &kp Q            &kp M              &kp W         &kp Z      &kp C_MUTE    &bl BL_TOG  &kp K          &kp F         &kp SQT             &kp SEMICOLON    &kp DOT           &kp RSHFT
+                            &kp LGUI         &kp LALT           &kp LCTRL     &kp SPACE  &mo 2         &mo 3       &kp BACKSPACE  &kp RETURN    &kp RALT            &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -132,11 +132,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans  &trans     &trans  &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &trans  &trans     &trans  &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans  &trans     &trans  &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1         &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans  &trans     &trans  &trans
+&trans      &kp INS       &kp PSCRN            &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &trans  &trans     &trans  &trans
+&trans      &kp LALT      &hml LEFT_ALT TILDE  &kp LSHFT     &trans        &kp CLCK                        &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans      &kp K_UNDO    &kp K_CUT            &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans  &trans     &trans  &trans
+                          &trans               &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
