@@ -60,7 +60,7 @@ layers:
   - {t: BACKSPACE, h: LEFT ALT}
   - {t: RETURN, h: Alt+Ctrl}
   - hyprland_right
-  - ''
+  - {t: no_mod_keys, h: toggle}
   qwerty:
   - ESCAPE
   - {t: ▽, type: trans}
@@ -122,6 +122,67 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  no_mod_keys:
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: default, h: toggle}
+  - Esc
+  - B
+  - L
+  - D
+  - C
+  - V
+  - J
+  - Y
+  - O
+  - U
+  - .
+  - ''
+  - ↹
+  - N
+  - R
+  - T
+  - S
+  - G
+  - P
+  - H
+  - A
+  - E
+  - I
+  - RIGHT SHIFT
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - X
+  - Q
+  - M
+  - W
+  - Z
+  - MUTE
+  - ''
+  - K
+  - F
+  - ''''
+  - ;
+  - ','
+  - {t: qwerty, h: toggle}
+  - ''
+  - hyperland_left
+  - ␣
+  - {t: ␣, h: '$$mdi:apple-keyboard-control$$'}
+  - lower
+  - raise
+  - {t: BACKSPACE, h: LEFT ALT}
+  - ⏎
+  - hyprland_right
+  - ''
   nomods:
   - '`'
   - '1'
